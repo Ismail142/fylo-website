@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth dark">
+<html lang="en" class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,9 +14,7 @@
 
 		<script>
 			if (!localStorage.getItem("theme")) {
-				window.matchMedia("(prefers-color-scheme: light)").matches === true
-					? localStorage.setItem("theme", "light")
-					: localStorage.setItem("theme", "dark");
+				localStorage.setItem("theme", "dark");
 			}
 
 			localStorage.getItem("theme") === "dark"
@@ -327,7 +325,7 @@
 		</section>
 
 		<!-- Footer -->
-		<footer id="footer" class="bg-darkBlue2 md:pb-20 text-white">
+		<footer id="footer" class="bg-darkBlue2 md:pb-20 text-white pt-10 dark:pt-0">
 			<div class="container mx-auto px-8 pb-10">
 				<div
 					class="bg-logo-dark-mode h-16 w-48 bg-no-repeat mb-8"
